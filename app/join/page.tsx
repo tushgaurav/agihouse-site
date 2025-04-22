@@ -1,7 +1,9 @@
+import JoinCard from '../../components/JoinCard';
+
 export default function Join() {
     return (
         <div>
-            Join
+            <JoinCard />
         </div>
     )
 }
