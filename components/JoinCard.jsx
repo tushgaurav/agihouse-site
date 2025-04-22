@@ -10,20 +10,20 @@ const JoinCard = () => {
       name: 'WhatsApp Community',
       icon: '/whatsapp.svg',
       link: 'https://chat.whatsapp.com/your-group-link',
-      description: 'Join our active WhatsApp community for daily discussions and updates'
+      description: 'Join our active WhatsApp community for daily discussions and updates',
     },
     {
-      name: 'Discord Server', 
+      name: 'Discord Server',
       icon: '/discord.svg',
       link: 'https://discord.gg/your-server',
-      description: 'Connect with fellow AI enthusiasts on our Discord server'
+      description: 'Connect with fellow AI enthusiasts on our Discord server',
     },
     {
       name: 'Telegram Group',
-      icon: '/telegram.svg', 
+      icon: '/telegram.svg',
       link: 'https://t.me/your-group',
-      description: 'Follow announcements and chat on our Telegram group'
-    }
+      description: 'Follow announcements and chat on our Telegram group',
+    },
   ];
 
   return (
@@ -45,7 +45,7 @@ const JoinCard = () => {
             className="flex flex-col items-center p-8 glassmorphism rounded-[24px] border border-white/20"
           >
             <div className={`${styles.flexCenter} w-[60px] h-[60px] rounded-full bg-white/10 mb-4`}>
-              <img 
+              <img
                 src={group.icon}
                 alt={group.name}
                 className="w-1/2 h-1/2 object-contain"
@@ -63,7 +63,7 @@ const JoinCard = () => {
             <a
               href={group.link}
               target="_blank"
-              rel="noopener noreferrer" 
+              rel="noopener noreferrer"
               className="flex items-center gap-2 py-3 px-6 bg-white/10 hover:bg-white/20 transition-colors rounded-full"
             >
               <span className="text-white">Join Now</span>
