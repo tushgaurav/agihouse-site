@@ -34,13 +34,13 @@ export const startingFeatures = [
 
 export const newFeatures = [
   {
-    imgUrl: '/fund.svg',
+    imgUrl: '/metadroid-fav.png',
     title: 'Startup Fund',
     subtitle:
       'We provide investments up to $1M for promising early-stage AI ventures',
   },
   {
-    imgUrl: '/network.svg',
+    imgUrl: '/network.png',
     title: 'Elite Network',
     subtitle:
       'Join a merit-based community of AI pioneers and industry leaders',
