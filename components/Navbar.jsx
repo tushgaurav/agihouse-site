@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { motion } from 'framer-motion';
-import styles from '../styles';
-import { navVariants } from '../utils/motion';
+import Link from "next/link";
+import { motion } from "framer-motion";
+import styles from "../styles";
+import { navVariants } from "../utils/motion";
 
 const Navbar = () => (
   <motion.nav
@@ -14,13 +14,19 @@ const Navbar = () => (
   >
     <div className="absolute w-[50%] inset-0 gradient-01" />
     <div className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}>
-      <Link href="/" className="font-extrabold text-[24px] text-white leading-[30px] z-10">
+      <Link
+        href="/"
+        className="font-extrabold text-[24px] text-white leading-[30px] z-10"
+      >
         AGIHOUSE
       </Link>
 
-      <h2 className="font-extrabold text-[24px] text-white leading-[30px]">
-        India
-      </h2>
+      <Link
+        href="/events"
+        className="font-extrabold text-[18px] text-white leading-[30px] z-10"
+      >
+        Events
+      </Link>
     </div>
   </motion.nav>
 );

@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import styles from '../styles';
-import { slideIn, staggerContainer, textVariant } from '../utils/motion';
+import { motion } from "framer-motion";
+import styles from "../styles";
+import { slideIn, staggerContainer, textVariant } from "../utils/motion";
 
 const Hero = () => (
   <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>
@@ -14,10 +14,7 @@ const Hero = () => (
       className={`${styles.innerWidth2} mx-auto flex flex-col`}
     >
       <div className="relative z-10 flex flex-col items-center justify-center">
-        <motion.h1
-          variants={textVariant(1.1)}
-          className={styles.heroHeading}
-        >
+        <motion.h1 variants={textVariant(1.1)} className={styles.heroHeading}>
           AI³
         </motion.h1>
         <motion.div
@@ -31,7 +28,7 @@ const Hero = () => (
       </div>
 
       <motion.div
-        variants={slideIn('right', 'tween', 0.2, 1)}
+        variants={slideIn("right", "tween", 0.2, 1)}
         className="relative w-full lg:-mt-[30px] md:-mt-[18px] -mt-[15px]  2xl:pl-[280px]"
       >
         <div className="absolute w-full h-[300px] hero-gradient rounded-tl-[140px] z-[0] sm:-top-[20px] -top-[10px]" />
@@ -48,7 +45,7 @@ const Hero = () => (
               alt="stamp"
               className="sm:w-[155px] w-[100px] sm:h-[155px] h-[100px] object-contain "
               animate={{ rotate: 360 }}
-              transition={{ repeat: Infinity, duration: 7, repeatType: 'loop' }}
+              transition={{ repeat: Infinity, duration: 7, repeatType: "loop" }}
             />
           </div>
         </a>
