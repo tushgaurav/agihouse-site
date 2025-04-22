@@ -9,7 +9,7 @@ const JoinCard = () => {
     {
       name: 'WhatsApp Community',
       icon: '/whatsapp2.png',
-      link: 'https://chat.whatsapp.com/your-group-link',
+      link: 'http://tinyurl.com/modelsmafialabs',
       description: 'Join our active WhatsApp community for daily discussions and updates',
     },
     {
