@@ -23,7 +23,7 @@ const GetStarted = () => (
         <img
           src="/get-started.png"
           alt="Get-Started"
-          className="w-[90%] h-[90%] object-content"
+          className="w-[70%]"
         />
       </motion.div>
       <motion.div
