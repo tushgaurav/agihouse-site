@@ -1,30 +1,41 @@
 export const exploreWorlds = [
   {
-    id: "world-1",
-    imgUrl: "/planet-01.png",
-    title: "AI Community Hub",
+    id: 'world-1',
+    imgUrl: '/explore/community.png',
+    title: 'AI Community Hub',
+    description:
+      'Connect with world-class AI researchers, founders, and industry leaders through exclusive events, hackathons, and collaborative sessions.',
   },
   {
-    id: "world-2",
-    imgUrl: "/planet-02.png",
-    title: "Venture Fund",
+    id: 'world-2',
+    imgUrl: '/explore/venture-fund.png',
+    title: 'Venture Fund',
+    description:
+      'Access early-stage funding up to $1M. We invest in ambitious AI-native startups, backed by leading figures in technology and venture capital.',
   },
   {
-    id: "world-3",
-    imgUrl: "/planet-03.png",
-    title: "Research Labs",
+    id: 'world-3',
+    imgUrl: '/explore/research-labs.png',
+    title: 'Research Labs',
+    description:
+      'Partner with us to solve complex enterprise challenges. AGI House Labs connects top AI talent with real-world problems to drive innovation.',
   },
   {
-    id: "world-4",
-    imgUrl: "/planet-04.png",
-    title: "Fellowship Program",
+    id: 'world-4',
+    imgUrl: '/explore/fellowship-program.png',
+    title: 'Fellowship Program',
+    description:
+      'Join our selective fellowship designed to empower the most promising AI founders and researchers, providing resources and mentorship.',
   },
   {
-    id: "world-5",
-    imgUrl: "/planet-05.png",
-    title: "Enterprise Solutions",
+    id: 'world-5',
+  imgUrl: '/explore/enterprise-solutions.png',
+    title: 'Enterprise Solutions',
+    description:
+      'Leverage our network and expertise to accelerate your AI adoption journey and achieve transformative business outcomes through strategic partnerships.',
   },
 ];
+
 
 export const startingFeatures = [
   "Learn founder journeys, from initial idea to current scale",
