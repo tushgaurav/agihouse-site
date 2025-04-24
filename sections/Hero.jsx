@@ -53,7 +53,7 @@ const Hero = () => (
             whileHover={{ scale: 1.05 }}
             className="text-center p-4 sm:p-6 backdrop-blur-lg bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 transition-all"
           >
-            <h3 className="text-3xl sm:text-4xl font-bold text-white">500+</h3>
+            <h3 className="text-3xl sm:text-4xl font-bold text-white">20K+</h3>
             <p className="text-gray-400 mt-2 text-sm sm:text-base">
               Community Members
             </p>
