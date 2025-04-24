@@ -22,7 +22,8 @@ const Navbar = () => (
       </Link>
 
       <Link
-        href="/events"
+        href="https://lu.ma/agihousebombay"
+        target="_blank"
         className="font-extrabold text-[18px] text-white leading-[30px] z-10"
       >
         Events
