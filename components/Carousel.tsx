@@ -16,6 +16,7 @@ export default function Carousel({
   const [, setLastViewedPhoto] = useLastViewedPhoto();
 
   function closeModal() {
+    // @ts-expect-error
     setLastViewedPhoto(currentPhoto.id);
     router.push("/", undefined, { shallow: true });
   }
@@ -35,7 +36,7 @@ export default function Carousel({
         onClick={closeModal}
       >
         <Image
-          src={currentPhoto.blurDataUrl}
+          src={currentPhoto.blurDataUrl!}
           className="pointer-events-none h-full w-full"
           alt="blurred background"
           fill
