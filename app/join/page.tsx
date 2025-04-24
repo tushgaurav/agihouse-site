@@ -1,9 +1,13 @@
-import JoinCard from '../../components/JoinCard';
+import Communities from '../../components/Communities';
+import Head  from 'next/head';
 
 export default function Join() {
     return (
         <div>
-            <JoinCard />
+            <Head>
+                <title>Join | AGI House</title>
+            </Head>
+            <Communities />
         </div>
     )
 }
