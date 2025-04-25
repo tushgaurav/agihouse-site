@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import { Footer, Navbar } from "../components";
+import { PostHogProvider } from "./providers";
 
 export const metadata = {
   title: "AGI House India",
@@ -33,11 +34,13 @@ const RootLayout = ({ children }) => (
       />
     </head>
     <body>
-      <div className="bg-primary-black overflow-hidden min-h-screen">
-        <Navbar />
-        {children}
-        <Footer />
-      </div>
+      <PostHogProvider>
+        <div className="bg-primary-black overflow-hidden min-h-screen">
+          <Navbar />
+          {children}
+          <Footer />
+        </div>
+      </PostHogProvider>
     </body>
   </html>
 );
