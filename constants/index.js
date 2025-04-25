@@ -85,4 +85,9 @@ export const socials = [
     url: "/twitter.svg",
     link: "https://twitter.com/modelsmafialabs",
   },
+  {
+    name: "github",
+    url: "/github.svg",
+    link: "https://github.com/models-mafia-labs",
+  },
 ];
