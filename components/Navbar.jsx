@@ -22,7 +22,7 @@ const Navbar = () => (
       </Link>
 
       <Link
-        href="https://lu.ma/agihousebombay"
+        href="https://lu.ma/agihouseindia"
         target="_blank"
         className="font-extrabold text-[18px] text-white leading-[30px] z-10"
       >

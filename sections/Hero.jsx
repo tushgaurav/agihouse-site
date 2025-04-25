@@ -16,23 +16,23 @@ const Hero = () => (
       <div className="relative z-10 flex flex-col items-center justify-center">
         <motion.div
           variants={textVariant(1.1)}
-          className="flex flex-col items-center"
+          className="flex flex-col items-center mb-8"
         >
-          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter text-center">
-            <span className="bg-gradient-to-r from-white via-gray-300 to-gray-100 bg-clip-text text-transparent">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black tracking-tighter text-center relative">
+            <span className="bg-gradient-to-br from-white via-gray-200 to-gray-100 bg-clip-text text-transparent drop-shadow-lg">
               AGI
             </span>
-            <span className="relative ml-2 sm:ml-4">
-              <span className="bg-gradient-to-r from-gray-100 via-white to-gray-300 bg-clip-text text-transparent">
+            <span className="relative ml-2 sm:ml-4 inline-flex flex-col">
+              <span className="bg-gradient-to-br from-gray-100 via-white to-gray-200 bg-clip-text text-transparent drop-shadow-lg">
                 HOUSE
               </span>
-              <span className="absolute -bottom-2 sm:-bottom-4 right-0 text-sm sm:text-lg font-light tracking-widest text-gray-400 flex items-center gap-2">
+              <span className="absolute -bottom-4 sm:-bottom-6 md:-bottom-8 lg:-bottom-10 right-0 text-xs sm:text-sm md:text-base lg:text-lg font-light tracking-[0.2em] text-gray-400 flex items-center gap-1 sm:gap-2">
                 <img
                   src="https://flagcdn.com/w40/in.png"
                   alt="Indian Flag"
-                  className="w-4 h-3 sm:w-6 sm:h-4 inline-block"
+                  className="w-3 h-2 sm:w-4 sm:h-3 md:w-5 md:h-3 lg:w-6 lg:h-4 inline-block"
                 />
-                INDIA
+                <span className="animate-pulse">INDIA</span>
               </span>
             </span>
           </h1>
