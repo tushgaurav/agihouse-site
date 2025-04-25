@@ -2,44 +2,54 @@
 
 import { motion } from 'framer-motion';
 import { fadeIn } from '../utils/motion';
+import Image from 'next/image';
 
 const Communities = () => {
   const whatsappGroups = [
     {
       name: 'AGI House Pune',
       link: 'https://chat.whatsapp.com/ILwgW5ml34fENJRviwYJM3',
+      key: 'pune'
     },
     {
       name: 'AGI House Gurgaon',
       link: 'https://chat.whatsapp.com/ENfKhxnpb2XB8FDm0ovjwj',
+      key: 'gurgaon'
     },
     {
       name: 'AGI House Delhi',
       link: 'https://chat.whatsapp.com/IEaoD1AK2s10BjoakzN9RF',
+      key: 'delhi'
     },
     {
       name: 'AGI House Noida',
       link: 'https://chat.whatsapp.com/J8rfe1rWdHb0A4d1w5FcXZ',
+      key: 'noida'
     },
     {
       name: 'AGI House Bangalore',
       link: 'https://chat.whatsapp.com/L5DBcokbb7H4kRTI3wMH8z',
+      key: 'bangalore'
     },
     {
       name: 'AGI House Hyderabad',
       link: 'https://chat.whatsapp.com/LTzWTglYod4ERilcGzDQqJ',
+      key: 'hyderabad'
     },
     {
-      name: 'AGI House Bhubaneswar',
+      name: 'AGI House Bhubaneshwar',
       link: 'https://chat.whatsapp.com/EU9ISul5ekg8vPd0ReVytg',
+      key: 'bhubaneshwar'
     },
     {
       name: 'AGI House Bombay',
       link: 'https://chat.whatsapp.com/BExGcemqkyBFtp5anCAGjt',
+      key: 'bombay'
     },
     {
       name: 'AGI House Ahmedabad',
       link: 'https://chat.whatsapp.com/KxjDjaGO5U61M3zA4jtcOI',
+      key: 'ahmedabad'
     }
   ];
 
@@ -81,10 +91,12 @@ const Communities = () => {
             className="flex items-center justify-between p-6 border border-white/10 rounded-xl hover:border-white/30 transition-all bg-white/5"
           >
             <div className="flex items-center gap-4">
-              <img
-                src="/whatsapp2.png"
-                alt="WhatsApp"
-                className="w-10 h-10"
+              <Image
+                alt={group.name}
+                width={40}
+                height={40}
+                src={`/images/groups/${group.key}.png`}
+                className="rounded-full"
               />
               <span className="text-white text-xl font-medium">{group.name}</span>
             </div>

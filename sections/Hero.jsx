@@ -5,13 +5,13 @@ import styles from "../styles";
 import { slideIn, staggerContainer, textVariant } from "../utils/motion";
 
 const Hero = () => (
-  <section className={`${styles.yPaddings} sm:pl-16 pl-6 min-h-screen`}>
+  <section className={`${styles.yPaddings} flex items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8`}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.innerWidth2} mx-auto flex flex-col`}
+      className={`${styles.innerWidth2} mx-auto flex flex-col max-w-[1440px] w-full`}
     >
       <div className="relative z-10 flex flex-col items-center justify-center">
         <motion.div
@@ -39,10 +39,9 @@ const Hero = () => (
         </motion.div>
         <motion.p
           variants={textVariant(1.2)}
-          className="mt-6 sm:mt-8 text-lg sm:text-xl md:text-2xl text-gray-300 max-w-2xl text-center px-4"
+          className="mt-8 sm:mt-8 text-lg sm:text-xl md:text-2xl text-gray-300 max-w-2xl text-center px-4"
         >
-          Empowering the next generation of AI innovators and entrepreneurs in
-          India
+          India's premier AI-native innovation residence and venture ecosystem
         </motion.p>
 
         <motion.div
@@ -66,7 +65,7 @@ const Hero = () => (
               ₹400Cr+
             </h3>
             <p className="text-gray-400 mt-2 text-sm sm:text-base">
-              In Investments
+              Investments Raised
             </p>
           </motion.div>
           <motion.div
