@@ -1,10 +1,14 @@
 'use client';
 
+import { usePostHog } from 'posthog-js/react';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../utils/motion';
 import Image from 'next/image';
+import Link from 'next/link';
 
-const Communities = () => {
+export default function Communities() {
+  const posthog = usePostHog();
+
   const whatsappGroups = [
     {
       name: 'AGI House Pune',
@@ -72,6 +76,15 @@ const Communities = () => {
     }
   ];
 
+  const captureJoinEvent = (group) => {
+    posthog.capture("group_joined", {
+      location: "/join",
+      name: group.name,
+      city: group.city,
+      group: group
+    })
+  }
+
   return (
     <motion.div
       variants={fadeIn('up', 'spring', 0.5, 1)}
@@ -101,7 +114,10 @@ const Communities = () => {
               <span className="text-white text-xl font-medium">{group.name}</span>
             </div>
             
-            <a
+            <Link
+              onClick={() => {
+                captureJoinEvent(group)
+              }}
               href={group.link}
               target="_blank"
               rel="noopener noreferrer"
@@ -109,7 +125,7 @@ const Communities = () => {
             >
               Join Group
               <span className="text-lg">→</span>
-            </a>
+            </Link>
           </motion.div>
         ))}
       </div>
@@ -153,5 +169,3 @@ const Communities = () => {
     </motion.div>
   );
 };
-
-export default Communities;
