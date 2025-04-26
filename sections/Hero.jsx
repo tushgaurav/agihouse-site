@@ -45,6 +45,18 @@ const Hero = () => (
         </motion.p>
 
         <motion.div
+          variants={textVariant(1.25)}
+          className="mt-8"
+        >
+          <a
+            href="/join"
+            className="bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white font-semibold py-3 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+          >
+            Join Now
+          </a>
+        </motion.div>
+
+        <motion.div
           variants={textVariant(1.3)}
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 mt-8 sm:mt-12 px-4 w-full max-w-7xl"
         >
