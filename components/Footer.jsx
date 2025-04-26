@@ -25,11 +25,9 @@ const Footer = () => (
           href="/join"
           className="flex items-center h-fit py-4 px-6 bg-[#2A6BE5] rounded-[32px] gap-[12px]"
         >
-          <Image
+          <img
             src="/logo.png"
             alt="arrow-right"
-            width={24}
-            height={24}
             className="w-6 h-6"
           />
           <span className="font-normal text-[16px] text-white">Join Now</span>
