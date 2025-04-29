@@ -1,3 +1,4 @@
+import Partners from '../components/Partners';
 import {
   About,
   Explore,
@@ -12,6 +13,7 @@ import {
 const Page = () => (
   <div>
     <Hero />
+    <Partners />
     <div className="relative">
       <About />
       <div className="gradient-03 z-0" />
