@@ -20,14 +20,14 @@ export default function Footer() {
       <div className="footer-gradient" />
       <div className={`${styles.innerWidth} mx-auto flex flex-col gap-8`}>
         <div className="flex items-center justify-between flex-wrap gap-5">
-          <h4 className="font-bold md:text-[64px] text-[44px] text-white">
-            Join the AI Revolution
+          <h4 className="font-bold md:text-[40px] text-[34px] text-white">
+            The fastest growing AGI community in India. 
           </h4>
           <Link
-           onClick={() => {
+            onClick={() => {
               posthog.capture("user_clicked_join", {
                 location: "footer",
-              })
+              });
             }}
             href="/join"
             className="flex items-center h-fit py-4 px-6 bg-[#2A6BE5] rounded-[32px] gap-[12px]"
@@ -54,7 +54,7 @@ export default function Footer() {
                     posthog.capture("user_clicked_social", {
                       social: social.name,
                       location: "footer",
-                    })
+                    });
                   }}
                   key={social.name}
                   href={social.link}

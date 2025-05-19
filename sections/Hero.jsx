@@ -58,7 +58,8 @@ export default function Hero() {
                   location: "hero",
                 })
               }}
-              href="/join"
+              href="https://tally.so/r/mOg2pA"
+              target="_blank"
               className="bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white font-semibold py-3 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
               Join Now
